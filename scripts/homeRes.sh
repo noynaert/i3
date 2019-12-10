@@ -1,0 +1,1 @@
+xrandr --output HDMI-1 --primary --left-of eDP-1 --mode 1600x900

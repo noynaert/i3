@@ -176,4 +176,10 @@ bar {
 #
 # Please remove the following exec line:
 #######################################################################
-exec i3-config-wizard
+# exec i3-config-wizard
+
+# My bindings
+bindsym Mod4+g exec /usr/bin/google-chrome
+bindsym Mod4+f exec /usr/bin/firefox
+bindsym Mod4+c exec /usr/bin/code
+bindsym Mod4+o exec /usr/bin/obs workspace 1
