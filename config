@@ -184,3 +184,4 @@ bindsym Mod4+f exec /usr/bin/firefox
 bindsym Mod4+c exec /usr/bin/code
 bindsym Mod4+o exec /usr/bin/obs workspace 1
 bindsym Mod4+n exec /usr/bin/nautilus
+bindsym Mod4+z exec /usr/bin/zoom
