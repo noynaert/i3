@@ -185,3 +185,22 @@ bindsym Mod4+c exec /usr/bin/code
 bindsym Mod4+o exec /usr/bin/obs workspace 1
 bindsym Mod4+n exec /usr/bin/nautilus
 bindsym Mod4+z exec /usr/bin/zoom
+
+#################################################
+# Lock Screen from https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
+#   i3exit is also copied to ~/bin
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Pause mode "$mode_system"
+## End Lock Screen
