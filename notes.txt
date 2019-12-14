@@ -1,1 +1,5 @@
 Locking screen with screenshot: https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity.1.html
+
+Saving and restoring layouts
+https://i3wm.org/docs/layout-saving.html
+
