@@ -179,12 +179,12 @@ bar {
 # exec i3-config-wizard
 
 # My bindings
-bindsym Mod4+g nohup /usr/bin/google-chrome
-bindsym Mod4+f nohup /usr/bin/firefox
-bindsym Mod4+c nohup /usr/bin/code
-bindsym Mod4+o nohup /usr/bin/obs workspace 1
-bindsym Mod4+n nohup /usr/bin/nautilus
-bindsym Mod4+z nohup /usr/bin/zoom
+bindsym Mod4+g exec /usr/bin/google-chrome
+bindsym Mod4+f exec /usr/bin/firefox
+bindsym Mod4+c exec /usr/bin/code
+bindsym Mod4+o exec /usr/bin/obs workspace 1
+bindsym Mod4+n exec /usr/bin/nautilus
+bindsym Mod4+z exec /usr/bin/zoom
 
 #################################################
 # Lock Screen from https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
