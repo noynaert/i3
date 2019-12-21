@@ -186,6 +186,13 @@ bindsym Mod4+o nohup /usr/bin/obs workspace 1
 bindsym Mod4+n nohup /usr/bin/nautilus
 bindsym Mod4+z nohup /usr/bin/zoom
 
+################## Audio
+Install pavucontrol
+bidndsym MOD1=a pavucontrol
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+
 #################################################
 # Lock Screen from https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
 #   i3exit is also copied to ~/bin
