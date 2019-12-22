@@ -187,8 +187,8 @@ bindsym Mod4+n exec /usr/bin/nautilus
 bindsym Mod4+z exec /usr/bin/zoom
 
 ################## Audio
-Install pavucontrol
-bidndsym MOD1=a pavucontrol
+# Install pavucontrol
+#bidndsym MOD1=a pavucontrol
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
