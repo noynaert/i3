@@ -220,7 +220,7 @@ exec_always --no-startup-id xautolock -time 10 -locker '~/bin/i3lock lock'
 ## End Lock Screen
 
 exec_always --no-startup-id /usr/bin/thunderbird
-exec xautolock -time 12 -notify 60 -bell 60 -locker 'i3lock lock'
+exec xautolock -time 12 -notify 60 -bell 60 -locker slock
 
 #add flameshot for screen capture.
 #be sure to add flameshot and mkdir ~/Picture/screenshots or adapt the binding
@@ -228,4 +228,4 @@ exec xautolock -time 12 -notify 60 -bell 60 -locker 'i3lock lock'
 bindsym PRINT exec flameshot gui -p ~/Pictures/screenshots
 
 # bind Krusader
-    bindsym Mod4+f exec /usr/bin/krusader
+    bindsym Mod4+k exec /usr/bin/krusader
