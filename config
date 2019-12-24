@@ -31,6 +31,12 @@ set $down k
 set $left j
 set $right semicolon
 
+
+# Programs to install for this repo
+# krusader
+# terminator
+# flameshot
+
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
@@ -220,3 +226,6 @@ exec xautolock -time 12 -notify 60 -bell 60 -locker 'i3lock lock'
 #be sure to add flameshot and mkdir ~/Picture/screenshots or adapt the binding
 
 bindsym PRINT exec flameshot gui -p ~/Pictures/screenshots
+
+# bind Krusader
+    bindsym Mod4+f exec /usr/bin/krusader
