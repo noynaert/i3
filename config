@@ -37,6 +37,7 @@ set $right semicolon
 # terminator
 # flameshot
 # stacer -- https://github.com/oguzhaninan/Stacer/blob/native/README.md
+# feh
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -231,3 +232,6 @@ bindsym PRINT exec flameshot gui -p ~/Pictures/screenshots
 
 # bind Krusader
     bindsym Mod4+k exec /usr/bin/krusader
+
+# set wallpaper
+exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
