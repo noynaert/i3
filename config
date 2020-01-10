@@ -43,7 +43,10 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+ set $TERMINAL='/usr/bin/terminator'
+# set TERMinal="urxvt"
+# bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec /usr/bin/terminator
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -242,3 +245,14 @@ exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
 
 # set screen resolution.  Create the fie with the arandr command (May need to install it)
 exec_always ~/.config/i3/scripts/setRes.sh
+
+# enable Alt+Tab Functionality
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# jump to last used workspace
+bindsym $mod+grave workspace back_and_forth
+
+# get rid of borders
+bindsym $mod1+b border pixel 1
+for_window [class="^.*"] border pixel 1
