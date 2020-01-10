@@ -255,4 +255,6 @@ bindsym $mod+grave workspace back_and_forth
 
 # get rid of borders
 bindsym $mod1+b border pixel 1
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border normal 1
+for_window [class="Terminator"] border pixel 1
+for_window [class="zoom"] border pixel 1
